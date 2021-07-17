@@ -502,6 +502,7 @@ EOF
     "server":"0.0.0.0",
     "server_ipv6":"::",
     "server_port":${shadowsocksport},
+    "nameserver":"8.8.8.8",
     "local_address":"127.0.0.1",
     "local_port":1080,
     "password":"${shadowsockspwd}",
@@ -513,7 +514,8 @@ EOF
     "timeout":120,
     "redirect":"",
     "dns_ipv6":false,
-    "fast_open":false
+    "no_delay":true,
+    "fast_open":true
 }
 EOF
     fi
